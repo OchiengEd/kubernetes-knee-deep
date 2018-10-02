@@ -63,6 +63,12 @@ spec:
         resources: {}
         securityContext:
           readOnlyRootFilesystem: true
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 20
+          periodSeconds: 5 
         volumeMounts:
           - name: proxy-config
             mountPath: /etc/nginx/conf.d
