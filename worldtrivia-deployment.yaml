@@ -1,0 +1,43 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: worldtrivia
+  labels:
+    app: worldtrivia
+    tier: service
+spec:
+  selector:
+    app: worldtrivia
+    tier: trivia
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8084
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worldtrivia
+  labels:
+    app: worldtrivia
+    tier: trivia
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: worldtrivia
+      tier: trivia
+  template:
+    metadata:
+      labels:
+        app: worldtrivia
+        tier: trivia
+    spec:
+      containers:
+      - name: worldtrivia
+        image: gcr.io/ops-edmund-ochieng/github-ochienged-worldcountries:v1.1.8
+        ports:
+        - containerPort: 8084
+      securityContext:
+        runAsNonRoot: true
