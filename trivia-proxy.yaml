@@ -4,11 +4,11 @@ kind: Service
 metadata:
   name: trivia
   labels:
-    app: nginx
+    app: trivia
     tier: service
 spec:
   selector:
-    app: nginx
+    app: trivia
     tier: proxy
   ports:
   - protocol: TCP
