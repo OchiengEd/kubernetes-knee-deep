@@ -68,7 +68,7 @@ spec:
             path: /
             port: 80
           initialDelaySeconds: 20
-          periodSeconds: 5 
+          periodSeconds: 5
         volumeMounts:
           - name: proxy-config
             mountPath: /etc/nginx/conf.d
