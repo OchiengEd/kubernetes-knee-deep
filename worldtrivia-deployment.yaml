@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: worldtrivia
-        image: gcr.io/ops-edmund-ochieng/github-ochienged-worldcountries:v1.1.8
+        image: gcr.io/ops-edmund-ochieng/github-ochienged-worldcountries:v1.1.10
         ports:
         - containerPort: 8084
       securityContext:
