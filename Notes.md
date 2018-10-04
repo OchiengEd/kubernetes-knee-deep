@@ -7,7 +7,27 @@ between GKE and self-hosted environments during the talk.
 - Ingress Controllers
 - MetalLB (Self-hosted k8s)
 - Dependency of the microservices
-- Microservices disasters to avoid
+- Microservices Considerations
 - Liveness and Readiness probes
-- Continuous deployment (Consistency and testing)
-- Testing strategies
+- Continuous Integration/Continuous Deployment (Consistency and testing)
+- Security(Pod Security)
+
+# Self-Hosted vs GKE
+- Seamless upgrade
+- Security due to ability to run the most up to date cluster
+- Load Balancers - Nginx, IPtables and MetalLB
+
+# Microservices Considerations
+- There should only be a one to one dependency
+- Minimize the number of layers
+- Structure of your code
+
+# Microservices Dependencies
+- What does the microservice depend on
+- Deploy services, ConfigMaps and Volumes first
+
+# Pod Security
+- Read-only filesystem
+- Use Non-root user to run services
+
+
