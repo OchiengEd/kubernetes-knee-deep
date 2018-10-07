@@ -25,9 +25,10 @@ between GKE and self-hosted environments during the talk.
 # Microservices Dependencies
 - What does the microservice depend on
 - Deploy services, ConfigMaps and Volumes first
+- Liveness Probes on a reverse proxy could be detrimental
 
 # Pod Security
 - Read-only filesystem
 - Use Non-root user to run services
-
-
+  * When using a non-root user, you have to use PID vs a usernam
+- Disable privilege escalation
