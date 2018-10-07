@@ -30,5 +30,11 @@ between GKE and self-hosted environments during the talk.
 # Pod Security
 - Read-only filesystem
 - Use Non-root user to run services
-  * When using a non-root user, you have to use PID vs a usernam
+  * When using a non-root user, you have to use PID vs a username
 - Disable privilege escalation
+
+# Continous Integration/Continuous Development
+- Build triggers
+- Docker Hub vs GCR
+- Blue/Green (also referred to as Red/Black) deployment strategies
+- Spinnaker
