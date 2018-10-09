@@ -25,9 +25,16 @@ between GKE and self-hosted environments during the talk.
 # Microservices Dependencies
 - What does the microservice depend on
 - Deploy services, ConfigMaps and Volumes first
+- Liveness Probes on a reverse proxy could be detrimental
 
 # Pod Security
 - Read-only filesystem
 - Use Non-root user to run services
+  * When using a non-root user, you have to use PID vs a username
+- Disable privilege escalation
 
-
+# Continous Integration/Continuous Development
+- Build triggers
+- Docker Hub vs GCR
+- Blue/Green (also referred to as Red/Black) deployment strategies
+- Spinnaker
