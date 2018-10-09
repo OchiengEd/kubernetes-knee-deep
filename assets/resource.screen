@@ -1,0 +1,13 @@
+Script started on Tue 09 Oct 2018 04:01:47 PM CDT
+workhorse:~/Workbench/kubernetes-satx$ kubectl get svc
+NAME         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.35.240.1   <none>        443/TCP   40d
+workhorse:~/Workbench/kubernetes-satx$ kubectl get svc[Kdeploy
+No resources found.
+workhorse:~/Workbench/kubernetes-satx$ kubectl get deploy[17P(reverse-i-search)`':[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17@workhorse:~/Workbench/kubernetes-satx$[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K rs
+No resources found.
+workhorse:~/Workbench/kubernetes-satx$ kubectl get rs[Kpo
+No resources found.
+workhorse:~/Workbench/kubernetes-satx$ exit
+
+Script done on Tue 09 Oct 2018 04:02:02 PM CDT

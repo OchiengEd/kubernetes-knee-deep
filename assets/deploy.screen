@@ -1,0 +1,14 @@
+Script started on Tue 09 Oct 2018 04:25:58 PM CDT
+workhorse:~/Workbench/kubernetes-satx$ kubectl apply -f countrycode-deployment.yaml
+service/countrycode created
+deployment.apps/countrycode created
+workhorse:~/Workbench/kubernetes-satx$ kubectl apply -f countrycode-deployment.yaml[Kworldtrivia-deployment.yaml
+service/worldtrivia created
+deployment.apps/worldtrivia created
+workhorse:~/Workbench/kubernetes-satx$ kubectl apply -f worldtrivia-deployment.yaml[Ktrivia-proxy.yaml
+service/trivia created
+configmap/proxy unchanged
+deployment.apps/nginx created
+workhorse:~/Workbench/kubernetes-satx$ exit
+
+Script done on Tue 09 Oct 2018 04:26:23 PM CDT
