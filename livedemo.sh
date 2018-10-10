@@ -33,7 +33,7 @@ run_command kubectl get cm
 comment We can the deploy our application
 run_command kubectl apply -f countrycode-deployment.yaml
 run_command kubectl apply -f worldtrivia-deployment.yaml 
-run_command kubectl apply -f trivia-proxy.yaml 
+run_command kubectl apply -f trivia-proxy.yaml
 
 comment Great. So how did the deployment go?
 run_command kubectl get svc
