@@ -40,7 +40,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
+    app: trivia
     tier: proxy
   name: nginx
   namespace: default
@@ -48,12 +48,12 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: trivia
       tier: proxy
   template:
     metadata:
       labels:
-        app: nginx
+        app: trivia
         tier: proxy
     spec:
       containers:
