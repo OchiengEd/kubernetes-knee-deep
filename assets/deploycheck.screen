@@ -1,0 +1,31 @@
+Script started on 2018-10-09 19:44:35-0500
+]0;eochieng@mzalendo: ~/kubernetes-satx[01;32meochieng@mzalendo[00m:[01;34m~/kubernetes-satx[00m$ kubectl get svc
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+countrycode   ClusterIP   10.35.247.166   <none>        80/TCP    3h18m
+kubernetes    ClusterIP   10.35.240.1     <none>        443/TCP   40d
+worldtrivia   ClusterIP   10.35.251.90    <none>        80/TCP    3h18m
+]0;eochieng@mzalendo: ~/kubernetes-satx[01;32meochieng@mzalendo[00m:[01;34m~/kubernetes-satx[00m$ kubectl get deploy
+NAME          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+countrycode   2         2         2            2           3h18m
+nginx         2         2         2            2           3h18m
+worldtrivia   6         6         6            6           3h18m
+]0;eochieng@mzalendo: ~/kubernetes-satx[01;32meochieng@mzalendo[00m:[01;34m~/kubernetes-satx[00m$ kubectl get deploy[Krs
+NAME                     DESIRED   CURRENT   READY   AGE
+countrycode-545b779598   2         2         2       3h18m
+nginx-6dc85d895f         2         2         2       3h18m
+worldtrivia-d5698fc66    6         6         6       3h18m
+]0;eochieng@mzalendo: ~/kubernetes-satx[01;32meochieng@mzalendo[00m:[01;34m~/kubernetes-satx[00m$ kubectl get pods
+NAME                           READY   STATUS    RESTARTS   AGE
+countrycode-545b779598-2gfls   1/1     Running   0          3h18m
+countrycode-545b779598-958dw   1/1     Running   0          3h18m
+nginx-6dc85d895f-cfgbs         1/1     Running   0          3h18m
+nginx-6dc85d895f-jnl97         1/1     Running   0          3h18m
+worldtrivia-d5698fc66-6wlf2    1/1     Running   0          3h18m
+worldtrivia-d5698fc66-8649k    1/1     Running   0          3h18m
+worldtrivia-d5698fc66-gddxw    1/1     Running   0          3h18m
+worldtrivia-d5698fc66-jf9k8    1/1     Running   0          3h18m
+worldtrivia-d5698fc66-xr5zq    1/1     Running   0          3h18m
+worldtrivia-d5698fc66-zntvj    1/1     Running   0          3h18m
+]0;eochieng@mzalendo: ~/kubernetes-satx[01;32meochieng@mzalendo[00m:[01;34m~/kubernetes-satx[00m$ exit
+
+Script done on 2018-10-09 19:45:00-0500
