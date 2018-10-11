@@ -38,3 +38,10 @@ between GKE and self-hosted environments during the talk.
 - Docker Hub vs GCR
 - Blue/Green (also referred to as Red/Black) deployment strategies
 - Spinnaker
+
+# Considerations
+- Know your microservice interdependency
+- Deploy services first
+- Minimize layers for your Docker Images
+- Avoid Nesting interactions
+- Consider using MetalLB or other poor in-house LB solutions 
